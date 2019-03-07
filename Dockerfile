@@ -1,4 +1,4 @@
-FROM alpine:3.9
+FROM alpine:@@BASE_VERSION@@
 
 # create a directory where we're dropping in our scripts
 RUN install -d /opt/kaloom/bin

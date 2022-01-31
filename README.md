@@ -85,6 +85,7 @@ spec:
             capabilities:
               add:
                 - NET_ADMIN
+                - NET_RAW
         - name: net-setup-net2
           image: kaloom/alpine:3.9
           env:
@@ -106,6 +107,7 @@ spec:
             capabilities:
               add:
                 - NET_ADMIN
+                - NET_RAW
       containers:
       - name: alpine-container
         image: kaloom/alpine:3.9

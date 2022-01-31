@@ -13,5 +13,5 @@ trap "rm -rf ${tmpfile}" EXIT
 
 sed -e "s/@@BASE_VERSION@@/$base_version/" Dockerfile >$tmpfile
 
-docker build -f $tmpfile . -t kaloom/alpine:${base_version}
-docker tag kaloom/alpine:${base_version} kaloom/alpine:latest
+docker build -f $tmpfile . -t kaloom/netconfig-utils:${base_version}
+docker tag kaloom/netconfig-utils:${base_version} kaloom/netconfig-utils:latest
